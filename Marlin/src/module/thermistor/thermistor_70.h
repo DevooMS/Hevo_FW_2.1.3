@@ -27,6 +27,9 @@
 
 // R25 = 100 kOhm, beta25 = 4100 K, 4.7 kOhm pull-up, bqh2 stock thermistor
 constexpr temp_entry_t temptable_70[] PROGMEM = {
+  { OV(  25), 280 },
+  { OV(  30), 270 },
+  { OV(  35), 260 },
   { OV(  40), 250 },
   { OV(  45), 240 },
   { OV(  50), 235 }, 
