@@ -547,7 +547,7 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  *
  */
-#define TEMP_SENSOR_0 70 //MODI with 70 will fail need extend map
+#define TEMP_SENSOR_0 1 //MODI with 70 will fail need extend map
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -678,9 +678,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  5.28
-    #define DEFAULT_Ki  0.25
-    #define DEFAULT_Kd  27.57
+    #define DEFAULT_Kp  8.40
+    #define DEFAULT_Ki  0.39
+    #define DEFAULT_Kd  45.20
   #endif
 #endif
 
@@ -1237,7 +1237,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 3200, 3200, 3500, 806 }  //MODI
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 3200, 3200, 3137, 839 }  //MODI
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1327,7 +1327,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION  //MODI TEST
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1553,7 +1553,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -30, -5, -2.29} //MODI
+#define NOZZLE_TO_PROBE_OFFSET { -30, -5, -2.40} //MODI
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
