@@ -678,9 +678,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  8.40
-    #define DEFAULT_Ki  0.39
-    #define DEFAULT_Kd  45.20
+    #define DEFAULT_Kp  8.93
+    #define DEFAULT_Ki  0.42
+    #define DEFAULT_Kd  47.32
   #endif
 #endif
 
@@ -1237,7 +1237,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 3200, 3200, 3137, 839 }  //MODI
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 3160, 3160, 3184, 839 }  //MODI
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1553,7 +1553,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -30, -5, -2.40} //MODI
+#define NOZZLE_TO_PROBE_OFFSET { -30, -5, -2.50} //MODI
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
