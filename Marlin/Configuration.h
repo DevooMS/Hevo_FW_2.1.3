@@ -113,7 +113,7 @@
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
 #define SERIAL_PORT_2 2   //MODI
-#define BAUDRATE_2 250000 //MODI
+#define BAUDRATE_2 115200 //MODI
 
 //#define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate
 
@@ -678,9 +678,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  8.93
-    #define DEFAULT_Ki  0.42
-    #define DEFAULT_Kd  47.32
+    #define DEFAULT_Kp  11.91
+    #define DEFAULT_Ki  0.57
+    #define DEFAULT_Kd  62.67
   #endif
 #endif
 
@@ -763,9 +763,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 299.77
-  #define DEFAULT_bedKi 58.55
-  #define DEFAULT_bedKd 1023.22
+  #define DEFAULT_bedKp 227.78
+  #define DEFAULT_bedKi 41.87
+  #define DEFAULT_bedKd 826.07
 
   /*#define DEFAULT_bedKp 115.45  //MODI
     #define DEFAULT_bedKi 14.88
@@ -1553,7 +1553,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -30, -5, -2.50} //MODI
+#define NOZZLE_TO_PROBE_OFFSET { -30, -5, -2.25} //MODI
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
